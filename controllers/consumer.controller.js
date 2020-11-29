@@ -1,6 +1,5 @@
 const axios = require("axios")
 const createError = require("http-errors")
-const base64 = require("js-base64")
 const KONG_ADMIN_URI = process.env.KONG_ADMIN_URI || "http://localhost:8001"
 const KONG_GATEWAY_URI = process.env.KONG_GATEWAY_URI || "http://localhost:8000"
 
