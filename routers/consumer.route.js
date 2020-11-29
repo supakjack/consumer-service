@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const consumerController = require('../controllers/consumer.controller')
 
-router.post('/', consumerController.register)
+router.post('/register', consumerController.register)
+router.post('/login', consumerController.login)
 
 module.exports = router
